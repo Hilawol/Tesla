@@ -1,0 +1,350 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color:#ffff;
+  font-family: "Gotham Book", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  border:1px solid transparent;
+  scroll-behavior:smooth;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+/* Utility */
+
+.clr{
+  clear:both;
+}
+
+.logo{
+  float: left;
+  width:22.5%;
+}
+
+.logo svg{
+  width:103px;
+  height: 16px;
+  margin-top: 15px;
+}
+.white-logo{
+  fill:#fff;
+}
+
+.dark-logo{
+  fill:#393C41;
+}
+
+.fa-bars{
+  display: inline-block;
+}
+
+.btn2 a{
+  display:block;
+  height: 40px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid red;
+  background: #fff;
+}
+
+.first-infobox { 
+  animation-duration: 1.5s; 
+  animation-fill-mode: both; 
+  animation-delay: 0.5s;
+} 
+
+.second-infobox{
+  animation-duration: 1.5s; 
+  animation-fill-mode: both; 
+  animation-delay: 0.55s;
+}
+
+.third-infobox{
+  animation-duration: 1.5s; 
+  animation-fill-mode: both; 
+  animation-delay: 0.6s;
+}
+
+
+@keyframes bounceInUp { 
+  0% { 
+      opacity: 0; 
+      transform: translateY(2000px); 
+  } 
+  60% { 
+      opacity: 1; 
+      transform: translateY(-30px); 
+  } 
+  80% { 
+      transform: translateY(10px); 
+  } 
+  100% { 
+      transform: translateY(0); 
+  } 
+} 
+
+.bounceInUp { 
+  animation-name: bounceInUp; 
+}
+
+/* Page 1  - model3 */
+
+#model3{
+  position: relative;
+  background:url(https://tesla-cdn.thron.com/delivery/public/image/tesla/b03da2fc-ecaa-4554-8df9-8f73e411f360/bvlatuR/std/2880x1800/model-3-hero-desktop) no-repeat center center/cover;
+  height: 100vh; 
+  width:100vw;
+}
+
+.main-container{
+  position: relative;
+  margin:0 15px;  
+  height:80vh;
+}
+
+/* Page 1 - model3 Header */
+
+.model3-header{
+  height: 52px;
+}
+
+.logo{
+  float:left;
+  width:30%;
+  width:min-content;
+}
+.header-nav-container{
+  float:right;
+  margin: auto;
+  width:70%;
+}
+
+.header-center-nav{
+  margin-right:115px;
+  float: left;
+} 
+
+.header-center-nav ul{
+  list-style: none;
+}
+ 
+.header-center-nav ul li{
+  display:inline-block;
+  margin: 15px 10px;
+}
+
+.header-side-nav{
+  float: right; 
+}
+.header-side-nav ul{
+  list-style: none;
+}
+
+.header-side-nav ul li{
+  display:inline-block;
+  margin: 15px 10px;
+}
+
+.header-center-nav a,
+.header-side-nav a{
+  text-decoration: none;
+}
+
+li.nav-icon{
+  margin-right: 0px;
+}
+
+
+/* Page 1 -model3 Showcase */
+
+.showcase-container{
+  text-align: center;
+  width:100vw;
+  height:10vh;
+  padding-bottom: 20px;
+  /* margin:auto;
+  display: absolute;
+  left:200px; */
+}
+
+.showcase-info{
+  /* display:block;
+  bottom:0px; */
+  margin:auto;
+}
+
+.showcase-h{
+  position: absolute;
+  top:90px;
+  left:50%;
+}
+
+.showcase-h1{
+  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+}
+
+.tcl-speedometer__outer-circle{
+  fill:#fff;
+  height: 30px;
+}
+
+.info-box{
+  display: inline-block;
+  padding: 0 20px;
+  /* height: 62px; */
+  /* width: 161px; */
+  max-width: 310px;
+  max-height: 98px;
+}
+
+.right-seperator{
+  border-right: 1px solid #fff;
+}
+
+.info-box span{
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.info-box p{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+} 
+
+#awd{
+  border-right: 0px solid #fff;
+}
+
+.btn-container{
+  display:inline-block;
+}
+
+.model3-showcase-btn {
+  display:inline-block;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  color:#fff;
+  width: 160px;
+  height:40px;
+  line-height: 14px;
+  font-size: 12px;
+}
+
+.model3-showcase-btn:hover{
+  background: #fff;
+  color:black;
+}
+
+/* Side Nav */
+
+.side-nav{
+  margin:15% 0;
+  width:max-content;
+}
+
+.side-nav li{
+  list-style: none;
+  border-left: 1px solid rgb(150, 149, 149);
+  margin: 6px;
+  line-height:21px;
+  font-size: 14px;
+  padding-left: 3px;
+}
+
+.side-nav li a{
+  text-decoration: none;
+  color:transparent;
+}
+
+.side-nav a:hover{
+  color:#fff;
+}
+
+.side-nav li.side-nav-current {
+  border-left: 3px solid #fff;
+}
+
+/* model3 Footer */
+
+.down-chevron{
+  background:transparent;
+  text-align: center;
+  height: 50.5px;
+  margin:auto;
+}
+
+.model3-footer{
+  height: 5vh;
+}
+
+
+/* -----------------------  Page2 performance------------------------*/
+
+#performance{
+  position: relative;
+  height: 100vh; 
+  width:100vw;
+}
+
+.performance-main{
+  background:url(https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop) no-repeat center center/cover;
+  height:70vh;
+}
+
+.performance-main-cotainer{
+  position: relative;
+  margin:0 15px;  
+  height:70vh;
+}
+
+.performance-showcase-info {
+  position:absolute;
+  bottom:72px;
+  left:23%;
+  text-align: center;
+}
+
+.performance-info {
+  padding:0 24px; 
+  margin:auto;
+  max-width:80%;
+}
+
+.performance-info-right{
+  padding:48px 0;
+  /* display:inline-block; */
+  width:60%;
+  float:right;
+}
+
+.performance-info-left{
+  /* display:inline-block; */
+  float:left;
+  width:40%;
+  padding:48px 20px 48px 0;
+}
+
+.performance-info-left h1,
+.performance-info-left h2,
+.performance-info-right p{
+  color:#393C41;
+}
+
+.performance-info-left h1{
+  font-size:28px ;
+}
+
+.performance-info-left h2{
+  font-size:17px;
+}
+
+
+
